@@ -9,12 +9,7 @@ public class InteraccionUsuario {
     public InteraccionUsuario() {
         scanner = new Scanner(System.in);
     }
-
-    // Método para obtener el intento del usuario
-    public int obtenerIntento() {
-        System.out.print("Introduce tu intento: ");
-        return scanner.nextInt();
-    }
+    
 
     // Método para mostrar un mensaje al usuario
     public void mostrarMensaje(String mensaje) {
@@ -25,4 +20,15 @@ public class InteraccionUsuario {
     public void cerrarScanner() {
         scanner.close();
     }
+    // Método para obtener el intento del usuario con validación de entrada 
+    public int obtenerIntento() {
+        System.out.print("Introduce tu intento: ");
+        while (!scanner.hasNextInt()) { // Verifica si la entrada es un entero
+            System.out.println("Entrada no válida. Por favor, introduce un número entero.");
+            scanner.next(); // Limpia el buffer del scanner
+            System.out.print("Introduce tu intento: ");
+        }
+        return scanner.nextInt(); // Devuelve el intento válido del usuario
+    }
 }
+

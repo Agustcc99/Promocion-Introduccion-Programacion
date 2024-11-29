@@ -9,7 +9,7 @@ public class GeneradorNumero {
     public GeneradorNumero(int rango) {
         Random rand = new Random();
         // Genera un número aleatorio entre 1 y rango
-        this.numeroAleatorio = rand.nextInt(rango) + 1;
+        this.numeroAleatorio = rand.nextInt(rango) ;
     }
 
     // Método para obtener el número aleatorio generado
