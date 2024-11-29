@@ -42,7 +42,7 @@ public class Principal {
                 interaccionUsuario.mostrarMensaje("Demasiado alto.");
             }
 
-            intentosRestantes--; // Decrementa el contador de intentos restantes
+            intentosRestantes--; // Decrementa el contador de intentos restantes.
         }
 
         if (adivinado) {

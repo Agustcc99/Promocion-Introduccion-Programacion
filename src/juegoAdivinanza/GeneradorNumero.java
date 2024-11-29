@@ -12,7 +12,7 @@ public class GeneradorNumero {
         this.numeroAleatorio = rand.nextInt(rango) ;
     }
 
-    // Método para obtener el número aleatorio generado
+    // Método para obtener el número aleatorio generado.
     public int getNumeroAleatorio() {
         return numeroAleatorio;
     }

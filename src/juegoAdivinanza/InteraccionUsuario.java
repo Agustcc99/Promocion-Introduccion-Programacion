@@ -20,7 +20,7 @@ public class InteraccionUsuario {
     public void cerrarScanner() {
         scanner.close();
     }
-    // Método para obtener el intento del usuario con validación de entrada 
+    // Método para obtener el intento del usuario con validación de entrada.
     public int obtenerIntento() {
         System.out.print("Introduce tu intento: ");
         while (!scanner.hasNextInt()) { // Verifica si la entrada es un entero
